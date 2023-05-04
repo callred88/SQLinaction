@@ -47,13 +47,14 @@ SELECT AVG(availability_365) FROM final_airbnb;
 -- <<<<<<<<<<<<<<<<<<<<<< PROBLEM 6 >>>>>>>>>>>>>>>>>>>>>>>
 -- Find all listings that do NOT have a review
 -- HINT: There are a few ways to go about this. Remember that an empty cell is "no value", but not necessarily NULL
-SELECT COUNT(number_of_reviews) FROM final_airbnb WHERE number_of_reviews = 0
+SELECT COUNT(number_of_reviews) FROM final_airbnb WHERE number_of_reviews = 0;
 -- EXPECTED OUTPUT: 6 rows
 
 
 -- <<<<<<<<<<<<<<<<<<<<<< PROBLEM 7 >>>>>>>>>>>>>>>>>>>>>>>
 -- Find the id of the listing with a room_type of "Private room" that has the most reviews 
 -- HINT: Sorting is your friend!
+SELECT id FROM final_airbnb WHERE number_of_reviews =(SELECT MAX(number_of_reviews) FROM final_airbnb) AND room_type = "Private room";
 
 -- EXPECTED OUTPUT: 58059
 
