@@ -30,7 +30,8 @@ SELECT DISTINCT neighbourhood FROM final_airbnb;
 
 -- Find both the highest price listing and the lowest price listing, displaying the entire row for each
 -- HINT: This can be two different queries.
-
+SELECT MAX(price) FROM final_airbnb;
+SELECT MIN(price) FROM final_airbnb;
 -- FOOD FOR THOUGHT: Think about the results. Are the high and low prices outliers in this data set?
 
 -- EXPECTED OUTPUT: Highest = 785, Lowest = 55
