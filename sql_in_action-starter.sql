@@ -40,7 +40,7 @@ SELECT MIN(price) FROM final_airbnb;
 -- <<<<<<<<<<<<<<<<<<<<<< PROBLEM 5 >>>>>>>>>>>>>>>>>>>>>>>
 -- Find the average availability for all listings in the data set (using the availability_365 column)
 -- HINT: Aggregates are more than just big rocks...
-
+SELECT AVG(availability_365) FROM final_airbnb;
 -- EXPECTED OUTPUT: 165.3904
 
 
