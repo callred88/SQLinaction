@@ -79,7 +79,8 @@ SELECT id FROM final_airbnb WHERE reviews_per_month = (SELECT MAX(reviews_per_mo
 -- Create a NEW column that will show a calculation for how many listings the host for each listing has in the table
 -- Display the column using aliasing.
 -- HINT: Work this one step at a time. See if you can find a way to just display the count of listings per host first.
-
+SELECT host_name, COUNT(host_id) AS Listings_Count FROM final_airbnb GROUP BY host_name ORDER BY COUNT(host_id) DESC;
+SELECT host_name, COUNT(host_id) AS Listings_Count FROM final_airbnb GROUP BY host_name ORDER BY COUNT(host_id) DESC LIMIT 1;
 -- EXPECTED OUTPUT: The Box House Hotel with 6 listings
 
 
