@@ -22,7 +22,7 @@ SELECT * FROM final_airbnb WHERE host_id = 63613;
 -- <<<<<<<<<<<<<<<<<<<<<< PROBLEM 3 >>>>>>>>>>>>>>>>>>>>>>>
 -- Query the data to just show the unique neighbourhoods listed
 -- HINT: This is a "distinct" operation...
-
+SELECT DISTINCT neighbourhood FROM final_airbnb;
 -- EXPECTED OUTPUT: 40 neighbourhoods listed
 
 
