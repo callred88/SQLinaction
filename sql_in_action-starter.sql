@@ -70,7 +70,7 @@ SELECT neighbourhood FROM final_airbnb GROUP BY neighbourhood ORDER BY COUNT(nei
 -- <<<<<<<<<<<<<<<<<<<<<< PROBLEM 9 >>>>>>>>>>>>>>>>>>>>>>>
 -- Query the data to discover which listing is the most popular using the reviews_per_month for all listings with a minimum_nights value of less than 7
 -- HINT: Sorting is still your friend! So are constraints.
-
+SELECT id FROM final_airbnb WHERE reviews_per_month = (SELECT MAX(reviews_per_month) FROM final_airbnb) AND minimum_nights < 7;
 -- EXPECTED OUTPUT: 58059
 
 
