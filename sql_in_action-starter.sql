@@ -88,7 +88,7 @@ SELECT host_name, COUNT(host_id) AS Listings_Count FROM final_airbnb GROUP BY ho
 -- <<<<<<<<<<<<<<<<<<<<<<< WRAP UP >>>>>>>>>>>>>>>>>>>>>>>>>
 -- What do you think makes a successful AirBnB rental in this market? What factors seem to be at play the most?
 -- Write a few sentences and include them with your project submission in the README file 
-
+SELECT * FROM final_airbnb;
 
 -- <<<<<<<<<<<<<<<<<<<<< ** BONUS ** >>>>>>>>>>>>>>>>>>>>>>>
 -- Find the the percent above or below each listing is compared to the average price for all listings.
