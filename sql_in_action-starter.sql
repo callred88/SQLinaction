@@ -63,10 +63,10 @@ SELECT id FROM final_airbnb WHERE number_of_reviews =(SELECT MAX(number_of_revie
 -- Find the most popular neighbourhood for listings 
 -- HINT: Look for which neighbourhood appears most frequently in the neighbourhood column
 -- HINT: You are creating "summary rows" for each neighbourhood, so you will just see one entry for each neighbourhood
-
+SELECT neighbourhood FROM final_airbnb GROUP BY neighbourhood ORDER BY COUNT(neighbourhood) DESC LIMIT 5;
 -- EXPECTED OUTPUT: Williamsburg
 -- INVESTIGATE: Should Williamsburg be crowned the most popular neighbourhood?
-
+-- Williamsburg is actually tied with Harlem for most frequently appeared. 
 -- <<<<<<<<<<<<<<<<<<<<<< PROBLEM 9 >>>>>>>>>>>>>>>>>>>>>>>
 -- Query the data to discover which listing is the most popular using the reviews_per_month for all listings with a minimum_nights value of less than 7
 -- HINT: Sorting is still your friend! So are constraints.
